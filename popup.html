@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Excel Downloader</title>
+  <style>
+    body { width: 300px; padding: 10px; font-family: Arial, sans-serif; }
+    textarea { width: 100%; height: 100px; margin-bottom: 10px; }
+    button { margin-right: 5px; padding: 5px 10px; }
+    #statusMessage { margin-top: 10px; font-weight: bold; }
+    .progress { margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h2>Excel Downloader</h2>
+  <textarea id="urlList" placeholder="Enter URLs, one per line"></textarea>
+  <button id="saveUrls">Save URLs</button>
+  <button id="startDownload">Start Download</button>
+  <div id="statusMessage"></div>
+  <div class="progress">
+    <span id="currentProgress">0</span> / <span id="totalUrls">0</span>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
